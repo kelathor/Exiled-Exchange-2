@@ -56,7 +56,8 @@ export function createPresets(
       item.category === ItemCategory.HeistContract ||
       item.category === ItemCategory.HeistBlueprint ||
       item.category === ItemCategory.Sentinel ||
-      item.category === ItemCategory.Tablet) &&
+      item.category === ItemCategory.Tablet ||
+      item.category === ItemCategory.Wombgift) &&
       item.rarity !== ItemRarity.Unique) ||
     (item.category === ItemCategory.Currency && item.trials?.numberOfTrials)
   ) {
