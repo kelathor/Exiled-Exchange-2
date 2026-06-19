@@ -1899,8 +1899,8 @@ export function removeLinesEnding(
   );
 }
 
-export function parseAffixStrings(clipboard: string): string {
-  return clipboard.replace(/\[([^\]|]+)\|?([^\]]*)\]/g, (_, part1, part2) => {
+export function parseAffixStrings(text: string): string {
+  return text.replace(/\[([^\]|]+)\|?([^\]]*)\]/g, (_, part1, part2) => {
     return part2 || part1;
   });
 }
